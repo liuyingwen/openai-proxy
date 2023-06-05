@@ -5,6 +5,6 @@ const OPENAI_API_HOST = "api.openai.com";
 serve(async (request) => {
   const url = new URL(request.url);
   url.host = OPENAI_API_HOST;
-  console.log(request)
+  console.log(JSON.stringify(request))
   return await fetch(url, request);
 });
