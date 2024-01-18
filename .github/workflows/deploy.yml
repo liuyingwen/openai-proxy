@@ -35,5 +35,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "high-otter-42"
-          entrypoint: "index.js" # 📝 Update the entrypoint if necessary
+          entrypoint: "deno.ts" # 📝 Update the entrypoint if necessary
           root: "." # 📝 Update the root if necessary
